@@ -77,8 +77,7 @@ const createImageSegmenter = async () => {
   imageSegmenter = await ImageSegmenter.createFromOptions(audio, {
     baseOptions: {
       modelAssetPath:
-        // "https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/1/deeplab_v3.tflite",
-        "./selfie_segmenter.tflite",
+        "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/latest/selfie_segmenter.tflite",
       delegate: "GPU"
     },
     runningMode: runningMode,
